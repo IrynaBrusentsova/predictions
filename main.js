@@ -90,9 +90,9 @@ button.addEventListener("click", () => {
   const phrases = predictions.map(function (item) {
     return item.desription;
   });
-  console.log(phrases);
+  // console.log(phrases);
 
-  let phrase = predictions[Math.floor(Math.random() * 9)];
+  let phrase = predictions[Math.floor(Math.random() * predictions.length)];
   console.log(phrase.desription);
   let text = phrase.desription;
 
